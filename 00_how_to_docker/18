@@ -1,0 +1,2 @@
+# After setting up VM on virtualbox, set up ssh port connection to the VM.
+# I'm using debian VM, use the instructions in this link to install Docker: https://docs.docker.com/engine/install/debian/
