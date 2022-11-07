@@ -2,7 +2,7 @@
 FROM alpine
 
 # Update apt packages
-apt-get update -y && apt-get upgrade -y
+RUN apk update && apk upgrade
 
 # Add vim container
-apt-get install vim -y
+RUN apk add vim
