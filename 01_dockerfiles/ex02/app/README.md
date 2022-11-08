@@ -1,14 +1,11 @@
 # Ruby on Rails Tutorial sample application
 
-## Reference implementation
-
-This is the reference implementation of the sample application from
+This is the sample application for the
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](https://www.railstutorial.org/)
-(6th Edition)
-by [Michael Hartl](http://www.michaelhartl.com/).
+by [Michael Hartl](https://www.michaelhartl.com/).
 
-See also the [7th edition README](https://github.com/learnenough/rails_tutorial_sample_app_7th_ed#readme).
+See also the [6th edition README](https://github.com/learnenough/sample_app_6th_ed#readme).
 
 ## License
 
@@ -18,30 +15,56 @@ is available jointly under the MIT License and the Beerware License. See
 
 ## Getting started
 
-To get started with the app, first follow the setup steps in [Section 1.1 Up and running](https://www.railstutorial.org/book#sec-up_and_running).
-
-Next, clone the repo and `cd` into the directory:
+To get started with the app, clone the repo and then install the needed gems. You can clone the repo as follows:
 
 ```
-$ git clone https://github.com/mhartl/sample_app_6th_ed.git
-$ cd sample_app_6th_ed
+$ git clone https://github.com/learnenough/rails_tutorial_sample_app_7th_ed 
+$ cd rails_tutorial_sample_app_7th_ed/
 ```
 
-Also make sure you’re using a compatible version of Node.js:
+To install the gems, you will need the same versions of Ruby and Bundler used to build the sample app, which you can find using the `cat` and `tail` commands as follows:
 
 ```
-$ nvm install 16.13.0
-$ node -v
-v16.13.0
+$ cat .ruby-version
+<Ruby version number>
+$ tail -n1 Gemfile.lock
+   <Bundler version number>
 ```
 
-Then install the needed packages (while skipping any Ruby gems needed only in production):
+Next, install the versions of `ruby` and the `bundler` gem from the above commands. The Ruby installation is system-dependent; on the cloud IDE recommended in the tutorial, it can be installed as follows:
 
 ```
-$ yarn add jquery@3.5.1 bootstrap@3.4.1
-$ gem install bundler -v 2.2.17
-$ bundle _2.2.17_ config set --local without 'production'
-$ bundle _2.2.17_ install
+$ rvm get stable
+$ rvm install <Ruby version number>
+$ rvm --default use <Ruby version number>
+```
+
+See the section [Up and running](https://www.learnenough.com/ruby-on-rails-7th-edition-tutorial#sec-up_and_running) for more details. Once Ruby is installed, the `bundler` gem can be installed using the `gem` command:
+
+```
+$ gem install bundler -v <version number>
+```
+
+Then the rest of the necessary gems can be installed with `bundle` (taking care to skip any production gems in the development environment):
+
+```
+$ bundle _<version number>_ config set --local without 'production'
+$ bundle _<version number>_ install
+```
+
+Here you should replace `<version number>` with the actual version number. For example, if `<version number>` is `2.3.14`, then the commands should look like this:
+
+```
+$ gem install bundler -v 2.3.14
+$ bundle _2.3.14_ config set --local without 'production'
+$ bundle _2.3.14_ install
+```
+
+If you run into any trouble, you can remove `Gemfile.lock` and rebundle at any time:
+
+```
+$ rm -f Gemfile.lock
+$ bundle install
 ```
 
 Next, migrate the database:
@@ -116,6 +139,6 @@ $ git checkout sign-up
 
 ## Help with the Rails Tutoiral
 
-Experience shows that comparing code with the reference app is often helpful for debugging errors and tracking down discrepancies. For additional assistance with any issues in the tutorial, please consult the [Rails Tutorial Help page](https://www.railstutorial.org/help).
+Experience shows that comparing code with the reference app is often helpful for debugging errors and tracking down discrepancies. For additional assistance with any issues in the tutorial, please consult the [Rails Tutorial Help page](https://github.com/learnenough/rails_tutorial_sample_app_7th_ed/blob/main/HELP.md).
 
-Suspected errors, typos, and bugs can be emailed to <support@learnenough.com>. All such reports are gratefully received, but please double-check with the [online version of the tutorial](https://www.railstutorial.org/book) and this reference app before submitting.
+Suspected errors, typos, and bugs can be emailed to <michael@learnenough.com>. All such reports are gratefully received, but please double-check with the [online version of the tutorial](https://www.railstutorial.org/book) and this reference app before submitting.

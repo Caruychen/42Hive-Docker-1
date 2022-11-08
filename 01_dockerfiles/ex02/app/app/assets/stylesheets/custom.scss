@@ -232,7 +232,6 @@ input {
     color: $state-danger-text;
   }
 }
-
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -245,6 +244,12 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
 }
 
 /* Users index */

@@ -1,21 +1,20 @@
 # Rails Tutorial Help
 
-This is the Help page for the [*Ruby on Rails Tutorial*](https://www.railstutorial.org/) (6th Edition) by [Michael Hartl](http://www.michaelhartl.com/).
+This is the Help page for the [*Ruby on Rails Tutorial*](https://www.railstutorial.org/) (7th Edition) by [Michael Hartl](https://www.michaelhartl.com/).
 
-See also the [7th edition Help page](https://github.com/learnenough/rails_tutorial_sample_app_7th_ed/blob/main/HELP.md).
-
+See also the [6th edition Help page](https://github.com/learnenough/sample_app_6th_ed/blob/main/HELP.md).
 
 ## General suggestions
 
-Web development is a tricky business, and despite our collective best efforts it’s likely that you’ll run into trouble at some point. If you do, I suggest comparing your code to the [reference implementation of the sample app](https://github.com/learnenough/sample_app_6th_ed) to track down any discrepancies. You can also post your question at [Stack Overflow](https://stackoverflow.com/), but I suggest you do so after trying all the debugging tips listed below.
+Web development is a tricky business, and despite our collective best efforts it’s likely that you’ll run into trouble at some point. If you do, I suggest comparing your code to the [reference implementation of the sample app](https://github.com/learnenough/rails_tutorial_sample_app_7th_ed) to track down any discrepancies. You can also post your question at [Stack Overflow](https://stackoverflow.com/), but I suggest you do so after trying all the debugging tips listed below.
 
 ## Debugging tips
 
 While it’s impossible to anticipate every potential problem, here are
 some debugging tips that might help:
 
-- Have you compared your code to the [reference implementation of the sample app](https://github.com/learnenough/sample_app_6th_ed)?
-- Are you using the [exact gem versions](https://gemfiles-6th-ed.railstutorial.org) (including Rails) used in the
+- Have you compared your code to the [reference implementation of the sample app](https://github.com/mhartl/rails_tutorial_sample_app_7th_ed)?
+- Are you using the [exact gem versions](https://gemfiles-7th-ed.railstutorial.org) (including Rails) used in the
   tutorial?
 - Did you try Googling the error message?
 - Did you stop the Rails web server (with Ctrl-C) and restart?
@@ -31,11 +30,11 @@ some debugging tips that might help:
 
 If your problem is of a general nature, such as having issues installing
 Rails or configuring your system, I suggest posting to [Stack
-Overflow](http://stackoverflow.com/). This will allow other
+Overflow](https://stackoverflow.com/). This will allow other
 people running into your issue (and not just those following the Rails
 Tutorial) to benefit from the discussion. For issues
-deploying to [Heroku](http://heroku.com/), please contact [Heroku
-technical support](http://support.heroku.com/).
+deploying to [Heroku](https://heroku.com/), please contact [Heroku
+technical support](https://support.heroku.com/).
 
 When asking your question on any mailing list or forum, be sure to
 include as much relevant information as possible. To maximize your chances
@@ -45,5 +44,5 @@ Raymond](http://www.catb.org/esr/).
 
 ## Error reports
 
-Suspected errors, typos, and bugs can be emailed to <admin@railstutorial.org>. All such reports are gratefully received, but please double-check with the [online version of the tutorial](https://www.railstutorial.org/book) and the [reference implementation](https://github.com/learnenough/sample_app_6th_ed) before submitting.
+Suspected errors, typos, and bugs can be emailed to <michael@learnenough.com>. All such reports are gratefully received, but please double-check with the [online version of the tutorial](https://www.railstutorial.org/book) and the [reference implementation](https://github.com/learnenough/rails_tutorial_sample_app_7th_ed) before submitting.
 
