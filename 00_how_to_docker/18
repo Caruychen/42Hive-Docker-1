@@ -1,2 +1,10 @@
+# For this to work, the following ports need to be open:
+# * TCP port 2377 for cluster management communications
+# * TCP and UDP port 7946 for communication among nodes
+# * UDP port 4789 for overlay network traffic
+# Unfortunately, looks like these aren't open on the iMacs, and you'd need sudo rights to open them.
+# I made 2 VMs, with one as the manager and the other as the worker. They are given the respective static IP addresses:
+# 10.12.203.42
+# 10.12.203.84
 # After setting up VM on virtualbox, set up ssh port connection to the VM.
 # I'm using debian VM, use the instructions in this link to install Docker: https://docs.docker.com/engine/install/debian/

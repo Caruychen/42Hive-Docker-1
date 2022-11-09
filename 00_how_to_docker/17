@@ -1,2 +1,2 @@
 # Check IP address, depends on the local network
-docker swarm init --advertise-addr 192.168.56.1
+docker swarm init --advertise-addr 10.12.203.42
