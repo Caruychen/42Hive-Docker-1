@@ -25,3 +25,6 @@ RUN apt-get install -y gitlab-ce && \
 EXPOSE 443 80 22
 
 ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && service ssh restart && gitlab-ctl tail
+
+#docker build -t cchen/ex03 .
+#docker run -it --rm -p 8080:80 -p 8022:22 -p 8443:443 --memory="8g" --cpus="3" --privileged -e GITLAB_ROOT_PASSWORD="12341234" cchen/ex03
